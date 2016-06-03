@@ -93,7 +93,9 @@ apt-get install -y  '^(libreadline|libpapi|libpfm4|libcoin80|libicu)-dev$' \
         python-all  python-all-dev  libnspr4-dev  libnss3-dev  libsasl2-dev  libmicrohttpd-dev  libavahi-common-dev \
         libqt4-dev  autotools-dev  autoconf  gawk  libxml-tokeparser-perl  libspreadsheet-read-perl gdb sysv-rc-conf \
 	libcairo2-dev sysstat valgrind apache2 realpath unbound \
-	libibumad-dev libsoqt-dev libsoqt-dev-common libnss3-tools libibmad-dev x11-utils build-essential pbuilder
+	libibumad-dev libsoqt-dev libsoqt-dev-common libnss3-tools libibmad-dev x11-utils build-essential pbuilder \
+    python3-all python3-all-dev libclass-dbi-perl libdbd-mysql-perl libdbd-pg-perl libncurses5-dev libextutils-autoinstall-perl librrds-perl libnet-snmp-perl \
+    python-six
 
 cd /vagrant
 sudo -H -u vagrant ./Makepkgs
