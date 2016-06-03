@@ -138,7 +138,8 @@ apt-get install -y '^(libreadline|libpapi|libpfm4|libcoin80)-dev$' \
 		python-all  python-all-dev  libnspr4-dev  libnss3-dev  libsasl2-dev  libmicrohttpd-dev  libavahi-common-dev \
 		libqt4-dev  autotools-dev  autoconf  gawk  libxml-tokeparser-perl libspreadsheet-read-perl ed gdb sysv-rc-conf \
 		libcairo2-dev libibumad-dev libibmad-dev sysstat valgrind apache2 realpath unbound libsoqt-dev \
-		libsoqt-dev-common libnss3-tools x11-utils build-essential librrds-perl
+		libsoqt-dev-common libnss3-tools x11-utils build-essential librrds-perl \
+        python3-all python3-all-dev libclass-dbi-perl libdbd-mysql-perl libdbd-pg-perl dh-python libncurses5-dev libextutils-autoinstall-perl libjson-perl libnet-snmp-perl
 
 cd /vagrant
 sudo -H -u vagrant ./Makepkgs
@@ -270,7 +271,7 @@ pcp_hosts = {
         :debian8 => {
                 :hostname => "debianjessie",
                 :ipaddress => "10.100.10.40",
-                :box => "debian/jessie64",
+                :box => "debian/contrib-jessie64",
                 :script => "#{$script_debian}"
         }
 # Built locally from : https://github.com/opscode/bento
